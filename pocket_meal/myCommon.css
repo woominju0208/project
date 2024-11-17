@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_right {
+    display: flex;
+    flex-direction: column;
+}
+
+.main_slide {
+    width: 100vw;
+    height: 500px;
+    margin-top: 20px;
+}
+
+.header_search {
+    width: 400px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(230, 230, 230);
+    padding: 10px;
+}
+
+.main_nav {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    gap: 50px;
+    list-style: none;
+}
+
+.main_nav_item {
+    text-align: center;
+}
+
+.main_nav_icon {
+    width: 70px;
+    height: 70px;
+}
+
+.main_menu {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 500;
+    list-style: none;
+    gap: 40px;
+    padding: 20px;
+}
+
+.main_menu_color {
+    color: #9b9b9b;
+}
+
+.main_menu_color:hover {
+    color: #000;
+}
+
+.main_menu_color:focus {
+    color: #000;
+}
+
+
+.menu-slider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.arrow {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu_items {
+    display: flex;
+    justify-content: center;
+    flex-direction: row; /* 가로 방향 정렬 */
+    overflow-x: auto; /* 가로 스크롤 활성화 */
+    gap: 30px; /* 아이템 간 간격 */
+    scroll-snap-type: x mandatory; /* 스크롤 정렬 */
+    max-width: 100%; /* 컨테이너의 가로 크기 제한 */
+    white-space: nowrap; /* Flexbox 사용 시 필요하지 않지만 추가로 명시 가능 */
+    padding: 20px;
+  }
+
+.menu_item {
+    flex: 0 0 auto;
+    width: 250px;
+    text-align: center;
+    scroll-snap-align: start;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.menu_item:hover {
+    transform: scale(1.4);
+}
+
+.menu_item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.btn_menu_view {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #ffd700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .menu_tag {
+    margin: 10px 0;
+  }
